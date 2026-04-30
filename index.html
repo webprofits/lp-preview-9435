@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Draft Article Wireframe</title>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --muted: #666;
+    --rule: #e3e3e3;
+    --bg: #fafaf7;
+    --paper: #ffffff;
+    --accent: #2d5d3a;
+    --placeholder-bg: repeating-linear-gradient(45deg, #ececec, #ececec 10px, #f4f4f4 10px, #f4f4f4 20px);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Georgia, "Times New Roman", serif; background: var(--bg); color: var(--ink); line-height: 1.6; }
+  .draft-banner { background: #fff8d6; border-bottom: 1px solid #e6d066; color: #6b4f00; font-family: -apple-system, system-ui, sans-serif; font-size: 12px; padding: 8px 16px; text-align: center; letter-spacing: 0.3px; }
+  .nav { background: #fff; border-bottom: 1px solid var(--rule); padding: 14px 24px; display: flex; justify-content: space-between; align-items: center; font-family: -apple-system, system-ui, sans-serif; font-size: 13px; position: sticky; top: 0; z-index: 10; }
+  .nav .logo { font-weight: 700; letter-spacing: 1px; font-size: 16px; }
+  .nav .links { display: flex; gap: 22px; color: #444; }
+  .nav .icons { display: flex; gap: 16px; color: #999; }
+
+  .article { max-width: 760px; margin: 0 auto; background: var(--paper); padding: 48px 56px 80px; box-shadow: 0 0 0 1px var(--rule); }
+  .breadcrumb { font-family: -apple-system, system-ui, sans-serif; font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 1.4px; margin-bottom: 14px; }
+  .hero h1 { font-size: 38px; line-height: 1.18; margin: 0 0 14px; font-weight: 700; letter-spacing: -0.5px; }
+  .hero .deck { font-size: 19px; color: #444; margin: 0 0 22px; font-style: italic; }
+  .byline { font-family: -apple-system, system-ui, sans-serif; font-size: 13px; color: var(--muted); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 10px 0; margin-bottom: 28px; display: flex; justify-content: space-between; align-items: center; }
+  .byline .author { font-weight: 600; color: #222; }
+  .byline .date { color: #888; }
+
+  .placeholder { background: var(--placeholder-bg); border: 1px dashed #bbb; display: flex; align-items: center; justify-content: center; flex-direction: column; color: #666; font-family: -apple-system, system-ui, sans-serif; font-size: 13px; text-align: center; padding: 18px; border-radius: 4px; }
+  .placeholder .label { font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; font-size: 11px; color: #444; margin-bottom: 6px; }
+  .placeholder .desc { font-size: 12px; color: #777; max-width: 80%; line-height: 1.5; }
+  .placeholder.hero-img { aspect-ratio: 16 / 9; margin-bottom: 24px; }
+  .placeholder.diagram { aspect-ratio: 16 / 8; margin: 22px 0; }
+
+  .article p { font-size: 18px; margin: 0 0 18px; }
+  .article h2 { font-size: 26px; margin: 44px 0 14px; line-height: 1.25; letter-spacing: -0.3px; }
+
+  .disclaimer { font-size: 13px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 22px; margin-top: 36px; font-style: italic; font-family: -apple-system, system-ui, sans-serif; }
+
+  .footer-mock { background: #1a1a1a; color: #aaa; padding: 36px 24px; font-family: -apple-system, system-ui, sans-serif; font-size: 12px; text-align: center; }
+
+  @media (max-width: 720px) {
+    .article { padding: 28px 22px; }
+    .hero h1 { font-size: 28px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="draft-banner">Draft article wireframe — for design review only. Not final copy or final design.</div>
+
+<div class="nav">
+  <div class="logo">[BRAND]</div>
+  <div class="links">
+    <span>Bestsellers</span><span>Shop All</span><span>By Benefit</span><span>Explore</span>
+  </div>
+  <div class="icons">⌕ ⚲ ⌂</div>
+</div>
+
+<article class="article">
+
+  <div class="breadcrumb">Science · Cellular Energy · ~6 min read</div>
+
+  <section class="hero">
+    <h1>The Real Reason You're Tired All The Time (It's Not What You Think)</h1>
+    <p class="deck">A plain-English look at the molecule your body uses to make energy — and why it gets harder to come by as you age.</p>
+    <div class="byline">
+      <div class="author">By the Editorial Team</div>
+      <div class="date">Draft</div>
+    </div>
+
+    <div class="placeholder hero-img">
+      <div class="label">Hero Image</div>
+      <div class="desc">Vibe: relatable lifestyle photography of someone looking tired during a normal workday — e.g. person at desk with laptop, hand on neck or head, soft daytime light, warm domestic / office setting. Real photography, not stock cliché. Audience skews 35–60. Image should feel like a "I see myself in this" moment, not a crisis or a textbook.</div>
+    </div>
+  </section>
+
+  <section>
+    <p>Every cell in your body uses a tiny helper called <b>NAD+</b> to turn the food you eat into energy. It's involved in hundreds of processes happening inside your cells every second.</p>
+    <p>NAD+ is one of the most actively studied molecules in modern biology — partly because it shows up in so many of the jobs your cells do.</p>
+  </section>
+
+  <h2>So What's NR, And Why Are Scientists Talking About It?</h2>
+  <p><b>NR</b> is short for <b>nicotinamide riboside</b> — fancy name, simple idea. It's a form of vitamin B3 that your body uses as a building block to make NAD+.</p>
+  <p>Think of it like this: if NAD+ is the worker doing the job, NR is the raw material your body needs to keep hiring more of them.</p>
+
+  <div class="placeholder diagram">
+    <div class="label">Pathway Diagram</div>
+    <div class="desc">Simple infographic: NR → NAD+ → Cellular Energy. Shows NR as a precursor entering NAD+ biosynthesis pathways.</div>
+  </div>
+
+  <h2>How Your Cells Actually Turn Food Into Energy</h2>
+  <p>Inside every cell, you've got tiny power plants called <b>mitochondria</b>. Their one job is to take the food you eat and turn it into energy your body can actually use.</p>
+  <p>NAD+ plays a key role inside those power plants — it's part of how cells unlock the energy stored in food in the first place. Without NAD+, the whole process can't run.</p>
+
+  <div class="placeholder diagram">
+    <div class="label">Cell Power Plant Diagram</div>
+    <div class="desc">Friendly illustration: a cell with the mitochondria drawn as a "power plant", food going in as fuel, energy coming out. Plain-English labels, no jargon. Show NAD+ as the messenger keeping things running.</div>
+  </div>
+
+  <h2>Why Most Vitamins Don't Make It Where They Need To Go</h2>
+  <p>Here's something most people don't know: a lot of the vitamins you take in pill form get broken down by your stomach before they ever reach the cells that actually need them. It's a bit like sending a parcel without packaging — most of it never arrives.</p>
+  <p>That's why scientists have been looking at smarter ways to deliver fragile nutrients. One of those ways is called <b>liposomal delivery</b> — a fancy term for wrapping a vitamin inside a tiny bubble of fat, similar to the kind of fat your own cells are made of. The bubble protects the vitamin on its way through your stomach so more of it can actually get used.</p>
+
+  <div class="placeholder diagram">
+    <div class="label">Liposome Diagram</div>
+    <div class="desc">Cross-section of a liposome — lipid bilayer wrapping a molecule. Generic, educational.</div>
+  </div>
+
+  <h2>Putting It All Together</h2>
+  <p>Most of us think of energy as something that comes from a good night's sleep, a strong coffee, or a healthy meal. And those things matter. But underneath all of it, there's another layer — the cellular layer — and that's where things like NAD+ and NR come in.</p>
+  <p>Your cells use a helper called <b>NAD+</b> to make energy from the food you eat. <b>NR</b> is one of the building blocks your body uses to make NAD+. It's a small piece of a very big system — a system researchers have been studying closely for years.</p>
+  <p>That's why so many scientists are paying close attention to NR right now. Not as a quick fix or a magic bullet — but because it's part of one of the most fundamental processes inside the human body.</p>
+  <p>Next time the topic of energy and ageing comes up — or you see NR mentioned in your wellness reading — you'll have a bit more context for what's actually being talked about under the hood.</p>
+
+  <div class="disclaimer">
+    This article is for educational and informational purposes only. It is not intended as medical advice, diagnosis, or treatment. Always consult a qualified healthcare practitioner before making changes to your health regimen.
+  </div>
+
+</article>
+
+<div class="footer-mock">
+  Standard site footer · Shop · Learn · Support · Legal
+</div>
+
+</body>
+</html>
